@@ -4,9 +4,11 @@ Returns: an integer
 '''
 def single_number(arr):
     # Your code here
-    for elem in arr:
-        arr.remove(5)
-    return arr
+    for i in arr:
+        temp = i
+        arr.remove(i)
+        if i not in arr:
+            return temp
 
 if __name__ == '__main__':
     # Use the main function to test your implementation
