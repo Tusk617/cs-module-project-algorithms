@@ -4,8 +4,17 @@ Returns: a List of integers
 '''
 def moving_zeroes(arr):
     # Your code here
+    appended = True
+    while appended:
+        appended = False
+        for elem in arr:
+            if elem == 0:
+                arr.remove(elem)
+                arr.append(0)
+                appended = True
+        return arr
 
-    pass
+    
 
 
 if __name__ == '__main__':

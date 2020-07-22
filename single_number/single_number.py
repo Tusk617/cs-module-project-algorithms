@@ -4,9 +4,9 @@ Returns: an integer
 '''
 def single_number(arr):
     # Your code here
-
-    pass
-
+    for elem in arr:
+        arr.remove(5)
+    return arr
 
 if __name__ == '__main__':
     # Use the main function to test your implementation
